@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+venv/
+env/
+.env
+*.egg-info/
+dist/
+build/
+
+# Checkpoints
+checkpoints/
+*.pt
+*.pth
+
+# Data
+data/*
+!data/.gitkeep
+
+# Outputs
+output/
+results/
+*.mp4
+*.avi
+
+# Images
+*.jpg
+*.jpeg
+*.png
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store

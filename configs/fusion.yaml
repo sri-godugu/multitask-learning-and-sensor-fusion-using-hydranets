@@ -1,0 +1,6 @@
+enabled: true
+secondary_modality: depth        # depth | lidar | radar
+secondary_in_channels: 1
+fpn_channels: 256
+num_heads: 8
+fusion_strategy: cross_attention  # cross_attention | cbam_only | add

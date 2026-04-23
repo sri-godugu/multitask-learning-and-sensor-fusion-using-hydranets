@@ -1,0 +1,22 @@
+backbone: resnet50
+pretrained: true
+freeze_bn: false
+backbone_channels: [256, 512, 1024, 2048]
+fpn_channels: 256
+backbone_warmup_epochs: 5
+img_size: [512, 512]
+
+active_tasks:
+  - detection
+  - segmentation
+  - localization
+  - depth
+
+num_det_classes: 80
+num_seg_classes: 19
+num_loc_classes: 10
+max_depth: 100.0
+
+use_fusion: false
+secondary_in_channels: 1
+fusion_heads: 8

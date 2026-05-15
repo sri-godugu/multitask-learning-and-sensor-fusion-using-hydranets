@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 class SegmentationHead(nn.Module):
     """
-    Semantic segmentation head using all FPN levels merged at the finest scale (P2).
+    Semantic segmentation head using all FPN levels merged at the finest scale (P2) - since it has the highest spatial detail.
     Two ConvTranspose2d blocks upsample 4× back to full input resolution.
     """
 
